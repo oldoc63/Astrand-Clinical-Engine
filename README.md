@@ -1,65 +1,20 @@
-# Astrand-Rhyming VO2max Estimator
+# Astrand-Clinical-Engine: Functional Assessment of Cardiovascular Fitness
 
-## 1. Overview and Introduction
+**Astrand-Clinical-Engine** is a specialized algorithmic tool designed to estimate maximum oxygen uptake (VO2 max) using the **Astrand-Ryhming protocol**. It provides a robust, web-based implementation of submaximal exercise testing for clinical cardiovascular assessment.
 
-The Astrand-Rhyming Test is one of the most widely used submaximal exercise tests for estimating maximum oxygen uptake (VO2 max) without requiring individuals to exercise to exhaustion. Developed by Swedish physiologist Per-Olof Astrand and Irma Rhyming in the 1950s, this test provides a safe and practical alternative to direct VO2 max measurement in laboratory settings. This tool provides a web-based implementation of the Astrand-Rhyming nomogram for estimating VO2 max.
+## 🚀 Features
+- **VO2 Max Estimation**: Implements the Astrand-Ryhming submaximal cycle ergometer protocol.
+- **Clinical Interface**: User-friendly web dashboard for real-time heart rate and workload input.
+- **Automated Calculations**: Eliminates manual nomogram errors with precise mathematical modeling.
+- **Environment Parity**: Integrated into the **Sovereign Cardiology Engine** for unified clinical assessment.
 
-## 2. Features
+## 🩺 Clinical Application
+This tool provides a safe and practical alternative to laboratory-based maximum exercise testing. It is essential for:
+- Assessing patient functional capacity in a clinical setting.
+- Monitoring cardiorespiratory progress during therapy or rehabilitation.
+- Guiding exercise prescriptions based on predicted VO2 max.
 
-*   Estimates VO2 max using the Astrand-Rhyming submaximal cycle ergometer protocol.
-*   Accepts heart rate and workload data through a user-friendly web interface.
-*   Provides an age-corrected VO2 max value.
-*   Responsive design that works on desktops, tablets, and mobile devices.
-
-## 3. Prerequisites
-
-A modern web browser that supports JavaScript.
-
-## 4. Installation
-
-1.  Clone the repository:
-    ```bash
-    git clone https://github.com/oldoc63/Astrand_Web_Html.git
-    cd Astrand_Web_Html
-    ```
-2.  Open the `public/index.html` file in your web browser.
-
-## 5. Usage Instructions
-
-Open the `public/index.html` file in your web browser. Fill in the required fields in the form and click the "Calculate" button.
-
-*   **Gender**: (male/female)
-*   **Age**: (years)
-*   **Weight**: (kg)
-*   **Exercise Heart Rate**: (bpm)
-*   **Workload**: (kpm/min)
-
-## 6. How the Calculation Works
-
-The calculation is based on the Astrand-Rhyming nomogram, which is a graphical tool used to estimate VO2 max from heart rate and workload data. The nomogram is based on the linear relationship between heart rate, workload, and oxygen uptake.
-
-The estimated VO2 max is then corrected for age using the following formula:
-
-`Corrected VO2max = Estimated VO2max * (1.11 - 0.007 * age)`
-
-## 7. Output Interpretation
-
-The estimated VO2 max will be displayed on the web page in ml/kg/min. This value represents the maximum amount of oxygen your body can utilize during intense exercise. The higher the value, the better your cardiorespiratory fitness.
-
-| Fitness Level | Males (ml/kg/min) | Females (ml/kg/min) |
-| :--- | :--- | :--- |
-| Superior | > 60 | > 56 |
-| Excellent | 52-60 | 47-56 |
-| Good | 44-51 | 39-46 |
-| Fair | 35-43 | 31-38 |
-| Poor | < 35 | < 31 |
-
-## 8. Limitations of the Test
-
-*   The test is a submaximal test and provides an estimation, not a direct measurement, of VO2 max.
-*   The accuracy of the test can be affected by factors such as caffeine, medication, and emotional state.
-*   The test is not suitable for individuals with cardiovascular or respiratory conditions.
-
-## 9. License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+## 🧪 Tech Stack
+- **Backend**: Python (Flask/FastAPI)
+- **Frontend**: Modern HTML/CSS/JS
+- **Integration**: Designed to interface with the Aortamacs clinical vault.
